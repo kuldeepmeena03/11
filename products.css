@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff4d4dc3;
+    color: #333;
+}
+
+header {
+    background-color: #ff4d4dc3; /* Red theme */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.product-section {
+    padding: 20px;
+}
+
+.product-section h1 {
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 10px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    position: relative;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info .price {
+    font-size: 1.2rem;
+    color: #ff0000;
+}
+
+.product-info .discount {
+    color: #ff4500;
+}
+
+.product-details {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    color: #333;
+}
+
+.product-card:hover .product-details {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #ff4500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
